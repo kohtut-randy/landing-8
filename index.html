@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing 8</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .click:checked ~ .slider {
+      right: 0;
+      transition: all 0.5s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-blue-600 pt-4" style="height: 80px;">
+    <div class="container mx-auto flex flex-row justify-between  ">
+      <div>
+        <img src="./img/Logo.png" alt="">
+      </div>
+      <div>
+        <ul class=" hidden lg:flex flex-row justify-between gap-x-4">
+          <li class="text-sm text-white">Demos</li>
+          <li class="text-sm text-white">Feature</li>
+          <li class="text-sm text-white">Pricing</li>
+          <li class="text-sm text-white">Contact</li>
+        </ul>
+      </div>
+      <div class="hidden lg:flex flex-row justify-between  gap-x-4 ">
+        <button class="text-white">Login</button>
+        <button class="text-white bg-red-400 rounded px-3 py-2">Sign Up</button>
+      </div>
+      <!-- mobile start-->
+      <input type="checkbox" name="check" id="check" class="hidden click">
+      <label for="check" class="z-20 lg:hidden check-btn">
+          <div class=" mx-2 space-y-1">
+              <div class="w-6 h-0.5 bg-slate-800 line"></div>
+              <div class="w-6 h-0.5 bg-slate-800 line"></div>
+              <div class="w-6 h-0.5 bg-slate-800 line"></div>
+          </div>
+      </label>
+      <div class="grid col-1  absolute w-3/4 h-auto text-center bg-neutral-100 transform: translate-x-6 -translate-y-4 -right-3/4 z-10 lg:hidden slider">
+          <a href="#" class="text-stone-700 pt-16">Demos</a>
+          <a href="#" class="text-stone-700">Features</a>
+          <a href="#" class="text-stone-700">Pricing</a>
+          <a href="#" class="text-stone-700">Contact</a>
+          <a href="#" class="font-medium text-base opacity-70 bg-sky-700 rounded shadow w-1/2 h-16 mx-auto flex items-center justify-center text-white">Login</a>
+          <a href="#" class="py-3 px-6 bg-red-400 rounded text-white text-base shadow w-1/2 h-16 mx-auto flex items-center justify-center">Sign Up</a>
+      </div>
+      <!--mobile end-->
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div  class=" h-auto bg-blue-600 relative">
+    <div class="container mx-auto  flex flex-col items-center justify-center lg:flex flex-row lg:items-start">
+      <div class=" w-full lg:w-1/2 flex flex-col items-center lg:items-start  gap-y-4 lg:my-20 ">
+        <h1 class="text-white text-center lg:text-left text-2xl lg:text-4xl font-extrabold font-mono ">The Smartest Way <br>
+          to find a Doctor.
+        </h1>
+        <p class=" text-sm text-center lg:text-left lg:text-sm lg:text-base  lg:text-start tracking-wide text-white">
+          An enim nullam tempor sapien gravida donec enim ipsum porta<br>
+          justo  congue magna at pretium purus pretium ligula 
+        </p>
+        <div class="flex items-center justify-center gap-x-10 lg:gap-x-4 w-60 mt-8 lg:mt-4">
+          <img class=" w-32 lg:w-24" src="./img/Play Store .png" alt="">
+          <img class=" w-32 lg:w-24" src="./img/App Store.png" alt="">
+        </div>
+      </div>
+      <div class=" w-full lg:w-1/2">
+        <img  class="lg:absolute lg:right-0 lg:bottom-0 w-full lg:w-1/2 " src="./img/hero-img.png" alt="">
+      </div>
+      <img  class="absolute w-32 bottom-32  right-2 lg:right-1 lg:top-20" src="./img/hero-Q1.png">
+      <img  class="absolute w-32 bottom-12 left-2  lg:left-2/4 lg:top-2/3 " src="./img/hero-Q2.png">
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class=" h-auto bg-white py-20 relative">
+    <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-6 " >
+      <div class=" w-2/3   mx-auto space-y-6 px-0 py-8 lg:w-4/5 px-2 gap-y-4 flex flex-col items-center justify-center lg:space-y-4 bg-white rounded-xl shadow-2xl">
+        <img class="w-12" src="./img/doctor-icon.png" alt="">
+        <p class="text-sm text-gray-500 text-center ">Fully layered dolor sit amet, consectetur <br>
+          adipisicing elit. Facere, nobis, id expedita<br>
+          dolores officiis laboriosam.
+        </p>
+      </div>
+      <div class=" w-2/3  mx-auto space-y-6 px-0 py-8 lg:w-4/5 px-2 gap-y-4 flex flex-col items-center justify-center space-y-4 bg-white rounded-xl shadow-2xl">
+        <img class="w-12" src="./img/treatment-icon.png" alt="">
+        <p class="text-sm text-gray-500 text-center">Fully layered dolor sit amet, consectetur <br>
+          adipisicing elit. Facere, nobis, id expedita<br>
+          dolores officiis laboriosam.
+        </p>
+      </div>
+      <div class=" w-2/3  mx-auto space-y-6 px-0 py-8 lg:w-4/5 px-2 gap-y-4 flex flex-col items-center justify-center space-y-4 bg-white rounded-xl shadow-2xl">
+        <img  class="w-12" src="./img/service-icon.png" alt="">
+        <p class="text-sm text-gray-500 text-center">Fully layered dolor sit amet, consectetur <br>
+          adipisicing elit. Facere, nobis, id expedita<br>
+          dolores officiis laboriosam.
+        </p>
+      </div>
+    </div>
+    <img class="absolute top-50 left-0px w-12 z-10" src="./img/dots (1).png">
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class=" h-auto lg:h-auto pt-12 lg:mt-0 bg-blue-100 py-8 relative ">
+    <div class="container mx-auto flex flex-col items-center justify-center gap-y-2 lg:flex lg:flex-row lg:items-center lg:justify-between lg:pb-8 relative ">
+      <div class=" w-full lg:w-1/2">
+        <img class=" hidden lg:flex absolute lg:-left-24 lg:top-20 w-1/2" src="./img/screen.png">
+        <img class=" w-full lg:hidden mt-12" src="./img/full-version.png">
+      </div>
+      <div class=" w-full  lg:w-1/2 mt-40 space-y-6 flex flex-col items-center lg:flex-col lg:items-start lg:mb-8">
+        <h6 class="text-blue-400 text-lg text-center lg:text-left">
+          About appmax 
+        </h6>
+        <h3 class="text-2xl lg:text-2xl lg:text-4xl text-black font-extrabold font-mono text-center lg:text-left">
+          Appmax teams lead the<br>
+          way to better healthcare<br>
+          & treatments
+        </h3>
+        <p class="text-sm lg:text-sm lg:text-base text-gray-500 text-center lg:text-left" >
+          An enim nullam tempor sapien gravida donec enim ipsum<br>
+          porta justo integer at odio velna vitae auctor integer congue 
+        </p>
+        <button class=" w-32 bg-red-500 text-white py-2 px-2 rounded-lg ">Get Started</button>
+      </div>
+    </div>
+    <img class="absolute top-0 right-0 w-20 lg:w-32" src="./img/shape.png">
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="mt-8 relative">
+    <div class="container mx-auto flex flex-col  lg:flex-row items-center justify-between relative  ">
+      <div class=" w-full lg:w-3/4 pt-12 space-y-8">
+        <h6 class="text-blue-400 text-lg text-center">
+          About appmax 
+        </h6>
+        <h3 class=" text-2xl lg:text-2xl lg:text-4xl text-black font-extrabold font-mono text-center">
+          Appmax is a great place <br>
+          to receive care at home
+        </h3>
+        <p class=" text-sm  lg:text-sm lg:text-base text-gray-500 text-center" >
+          An enim nullam tempor sapien gravida donec enim ipsum<br>
+          porta justo integer at odio velna vitae auctor integer congue 
+        </p>
+        <ul class="flex flex-col items-center justify-center mt-12 space-y-8">
+          <li class="flex flex-row items-center justify-center space-x-4"> 
+            <img class="w-12" src="./img/quality.png">
+            <p class="text-sm  lg:text-sm lg:text-base text-gray-500 text-center">
+              With lots of unique blocks you can easily<br>
+              create a page without coding with Appmax
+            </p>
+          </li>
+          <li class="flex flex-row items-center justify-center space-x-4"> 
+            <img class="w-12" src="./img/professional.png">
+            <p class="text-sm  lg:text-sm lg:text-base text-gray-500 text-center">
+              With lots of unique blocks you can easily<br>
+              create a page without coding with Appmax
+            </p>
+          </li>
+        </ul>
+      </div>
+      <div class=" w-full lg:w-3/4 pt-32 ">
+        <img src="./img/screen-time.png">
+      </div>
+    </div>
+  </div >
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="mt-8 h-auto bg-blue-100 py-4">
+    <div  class="container mx-auto flex flex-col items-center justify-between ">
+      <div class=" mt-4 space-y-4">
+        <h6 class="text-blue-400 text-lg text-center">
+          About appmax 
+        </h6>
+        <h3 class="text-2xl lg:text-4xl text-black font-extrabold font-mono text-center">
+          Get the best caring<br>
+          facilities for everyone
+        </h3>
+        <p class="text-sm lg:text-base text-gray-500 text-center" >
+          An enim nullam tempor sapien gravida donec enim ipsum<br>
+          porta justo integer at odio velna vitae auctor integer congue 
+        </p>
+      </div>
+      <div class="mt-12  grid grid-cols-1 lg:grid-cols-3 mb-8 gap-x-4 gap-y-8 lg:gap-y-4">
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/Cardiology.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">Cardiology</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/Neurology.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">Neurology</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/Dental service.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">Dental service</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/Eye care service.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">Eye care service</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/General checkup.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">General checkup</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+        <div class="shadow-lg rounded-lg flex flex-col items-center justify-between space-y-8 bg-white p-4">
+          <img class="w-12" src="./img/Medicine service.png">
+          <h5 class="text-xl text-black font-extrabold font-mono text-center">Medicine service</h5>
+          <p class="text-sm lg:text-base text-gray-500 text-center" >
+            With lots of unique blocks you can<br>
+            easily create a page without coding with<br>
+            Appmax easily. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-blue-700 flex flex-col items-center justify-center relative py-8 lg:py-4">
+    <div class=" z-10 container mx-auto h-auto">
+      <div class=" mx-auto  grid grid-cols-1 lg:grid-cols-5 gap-y-6 gap-x-8 pt-8">
+        <img class="w-32" src="./img/airbnb.png">
+        <img class="w-32" src="./img/hubspot.png">
+        <img class="w-32" src="./img/google.png">
+        <img class="w-32" src="./img/microsoft.png">
+        <img class="w-32" src="./img/walmart.png">
+      </div>
+      <div class="lg:h-32 mx-auto w-2/3 grid grid-cols-1 lg:grid-cols-4 gap-y-4 bg-white mt-12 p-4 rounded-lg shadow-xl">
+        <div class=" flex flex-col items-center justify-between">
+          <h3 class="text-4xl">28K</h3>
+          <p class="text-green-500">Total Users</p>
+        </div>
+        <div class=" flex flex-col items-center justify-between">
+          <h3 class="text-4xl">13K</h3>
+          <p class="text-red-500">Total Users</p>
+        </div>
+        <div class=" flex flex-col items-center justify-between">
+          <h3 class="text-4xl">68K</h3>
+          <p class="text-yellow-500">Total Users</p>
+        </div>
+        <div class=" flex flex-col items-center justify-between">
+          <h3 class="text-4xl">85%</h3>
+          <p class="text-blue-500">Total Users</p>
+        </div>
+      </div>
+    </div>
+    <div class="absolute bottom-0 inset-x-0 h-16 bg-white z-0 "></div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-white mt-12">
+    <div class="container mx-auto flex flex-col lg:flex-row items-center justify-center pt-12 py-8 lg:py-4">
+      <div class=" w-full lg:w-3/4 ">
+        <img class="w-full" src="./img/doctor-profile.png" alt="">
+      </div>
+      <dir class=" w-full lg:w-3/4 space-y-8 flex flex-col items-start justify-center">
+        <h6 class="text-blue-400 text-lg text-center">
+          About appmax 
+        </h6>
+        <h3 class="text-3xl text-black font-extrabold font-mono text-start">
+          Quality healthcare starts<br>
+          with one click easily
+        </h3>
+        <p class="text-sm lg:text-base text-gray-500 text-start" >
+          An enim nullam tempor sapien gravida donec enim ipsum<br>
+          porta justo integer at odio velna vitae auctor integer congue 
+        </p>
+        <ul class="flex flex-col items-start justify-center gap-y-2 ">
+          <li class="flex flex-row items-start justify-center space-x-4">
+            <img class="w-4" src="./img/mark.png">
+            <p class="text-sm text-gray-500 text-center">
+              Call, video chat or message a doctor
+            </p>
+          </li>
+          <li class="flex flex-row items-start justify-center space-x-4">
+            <img class="w-4" src="./img/mark.png">
+            <p class="text-sm text-gray-500 text-center">
+              Insurance not required
+            </p>
+          </li>
+          <li class="flex flex-row items-start justify-center space-x-4">
+            <img class="w-4" src="./img/mark.png">
+            <p class="text-sm text-gray-500 text-center">
+              Prescription pick-up at your preferred pharmacy
+            </p>
+          </li>
+        </ul>
+      </dir>
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-white mt-16 py-8 lg:py-4">
+    <div class="container mx-auto flex flex-col items-center justify-center" >
+      <div class=" w-full flex flex-col items-start gap-y-4  lg:flex-row lg:items-center justify-between">
+        <div class="flex flex-col items-start justify-center ">
+          <h6 class="text-blue-400 text-lg text-center">
+            Meet our professionals 
+          </h6>
+          <h3 class="text-2xl text-black font-extrabold font-mono text-start">
+            Meet the top &best rated doctors
+          </h3>
+        </div>
+        <div class="flex flex-row items-center justify-center">
+          <p class="text-sm text-red-500 font-bold  text-start">View all doctors</p><img class="w-2" src="./img/right-arrow.png">
+        </div>
+      </div>
+      <div class=" w-3/4 lg:w-full mt-12 grid grid-cols-1 gap-y-6 lg:grid-cols-4 gap-x-4">
+        <div class="flex flex-col items-center justify-center rounded-lg shadow-lg shadow-gray-100 relative">
+          <img class="w-56" src="./img/Dr. Esther Howard.png">
+          <div class="flex flex-row items-center justify-between px-2 bg-white border-solid  border-2 border-green-500 rounded absolute  top-2 left-20 lg:left-4 top-2">
+            <img class="w-2" src="./img/green-star.png">
+            <p class="text-sm text-green-500 ">
+              4.5
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-center space-y-2 p-2">
+            <h5 class="text-sm text-blue-500" >
+              Radiology
+            </h5>
+            <h4 class="text-sm text-black">Dr. Esther Howard</h4>
+            <h4>M.B.B.S, Ph.D</h4>
+            <p class="text-sm text-black">Attending physician, Cardiology editor.</p>
+            <div class="w-full flex flex-row items-center justify-between" >
+              <p class="text-sm text-green-500">
+                Available Today
+              </p>
+              <button class="bg-red-400 text-white py-1 px-1">Book Today</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-lg shadow-lg shadow-gray-100 relative">
+          <img class="w-56" src="./img/Dr. Leslie Alexander.png">
+          <div class="flex flex-row items-center justify-between px-2 bg-white border-solid  border-2 border-green-500 rounded absolute  top-2 left-20 lg:left-4 top-2">
+            <img class="w-2" src="./img/green-star.png">
+            <p class="text-sm text-green-500 ">
+              4.5
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-center space-y-2 p-2">
+            <h5 class="text-sm text-blue-500" >
+              Neurology
+            </h5>
+            <h4 class="text-sm text-black">Dr. Leslie Alexander</h4>
+            <h4>M.B.B.S, Ph.D</h4>
+            <p class="text-sm text-black">Attending physician, Cardiology editor.</p>
+            <div class="w-full flex flex-row items-center justify-between" >
+              <p class="text-sm text-gray-500">
+                Not Available
+              </p>
+              <button class="bg-red-400 text-white py-1 px-1">Book Today</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-lg shadow-lg shadow-gray-100 relative">
+          <img class="w-56" src="./img/Dr. Kathryn Murphy.png">
+          <div class="flex flex-row items-center justify-between px-2 bg-white border-solid  border-2 border-green-500 rounded absolute  top-2 left-20 lg:left-4 top-2">
+            <img class="w-2" src="./img/green-star.png">
+            <p class="text-sm text-green-500 ">
+              4.5
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-center space-y-2 p-2">
+            <h5 class="text-sm text-blue-500" >
+              Cardiology
+            </h5>
+            <h4 class="text-sm text-black">Dr. Kathryn Murphy</h4>
+            <h4>M.B.B.S, Ph.D</h4>
+            <p class="text-sm text-black">Attending physician, Cardiology editor.</p>
+            <div class="w-full flex flex-row items-center justify-between" >
+              <p class="text-sm text-green-500">
+                Available Today
+              </p>
+              <button class="bg-red-400 text-white py-1 px-1">Book Today</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center rounded-lg shadow-lg shadow-gray-100 relative">
+          <img class="w-56" src="./img/Dr. Jacob Jones.png">
+          <div class="flex flex-row items-center justify-between px-2 bg-white border-solid  border-2 border-green-500 rounded absolute  top-2 left-20 lg:left-4 top-2">
+            <img class="w-2" src="./img/green-star.png">
+            <p class="text-sm text-green-500 ">
+              4.5
+            </p>
+          </div>
+          <div class="flex flex-col items-start justify-center space-y-2 p-2">
+            <h5 class="text-sm text-blue-500" >
+              Radiology
+            </h5>
+            <h4 class="text-sm text-black">Dr. Jacob Jones</h4>
+            <h4>M.B.B.S, Ph.D</h4>
+            <p class="text-sm text-black">Attending physician, Cardiology editor.</p>
+            <div class="w-full flex flex-row items-center justify-between" >
+              <p class="text-sm text-green-500">
+                Available Today
+              </p>
+              <button class="bg-red-400 text-white py-1 px-1">Book Today</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-white mt-16 pt-12 relative ">
+    <img class="w-20 lg:w-32 absolute top-0 right-0" src="./img/shape.png">
+    <img class=" w-12 lg:w-20 absolute left-0 top-20" src="./img/dots (2).png">
+    <div class="container mx-auto flex flex-col items-center justify-center space-y-4">
+      <h6 class="text-blue-400 text-lg text-center">
+        Testimonial
+      </h6>
+      <h3 class="text-2xl text-black font-extrabold font-mono text-center">
+        See what our members are <br>
+        saying about Appmax
+      </h3>
+      <div class="flex flex-row items-center justify-center space-x-4 lg:space-x-8 mt-12">
+        <img class=" w-6 lg:w-8" src="./img/left-arrow2.png">
+        <div class=" w-4/5 flex flex-col items-center justify-center bg-white rounded-lg shadow-2xl shadow-gray-100 py-8 px-16 space-y-4">
+          <p class=" w-full text-sm lg:text-base text-gray-500 text-center">
+            OMG! I cannot believe that I have got a brand new <br>
+            landing page after getting appmax. It was super easy to<br>
+            edit and publish.
+          </p>
+          <div class="flex flex-row items-center justify-center space-x-4">
+            <img class=" w-14 lg:w-20" src="./img/Jenny Wilson.png">
+            <div class="flex flex-col items-center justify-center">
+              <h3 class="text-2xl text-black font-extrabold font-mono text-start">
+                Jenny Wilson
+              </h3>
+              <h5 class="text-sm lg:text-base text-gray-500 text-start">
+                Web Developer
+              </h5>
+            </div>
+          </div>
+          
+        </div>
+        <img class="w-6 lg:w-8" src="./img/right-arrow2.png">
+      </div>
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-white mt-16">
+    <div class=" relative container mx-auto h-60 flex flex-col items-center lg:items-start justify-center space-y-8 lg:rounded-xl bg-blue-600">
+      <div class=" mx-auto flex flex-row items-center lg:items-start ">
+        <h3 class="text-2xl lg:text-4xl text-white font-extrabold font-mono text-center lg:text-start">
+          Appmax is available <br>
+          for all devices
+        </h3>
+      </div>
+      <div class=" w-3/4 mx-auto flex flex-col lg:flex-row  items-center justify-between space-y-8 ">
+        <p class="text-sm lg:text-base text-white text-start">
+          A Private Limited is the most . The limited liabilityis, in <br>
+          fact, the only company allowed by Companies.
+        </p>
+        <div class="flex flex-rowitems-center justify-between space-x-8">
+          <img class="w-24 h-8" src="./img/Play Store .png">
+          <img class="w-24 h-8" src="./img/App Store.png">
+        </div>
+      </div>
+      <img class="absolute w-32 -top-8 right-0" src="./img/shape2.png">
+    </div>
+  </div>
+  <!--==============================================================
+  ===================================================================== -->
+  <div class="h-auto bg-white mt-16 flex flex-col items-start lg:items-center justify-center">
+    <div class="container mx-auto flex flex-col lg:flex-row justify-between space-y-16">
+      <div class="flex flex-col items-start justify-center space-y-4 lg:mt-12">
+        <img class="w-20" src="./img/footer-logo.png">
+        <p class=" w-full text-sm text-gray-500 text-start">
+          There are many variations of passages of<br> 
+          Lorem the Ipsum available but it is the <br>
+          majority of suffered that a alteration in <br>
+          that some dummy text.
+        </p>
+        <div class="grid grid-cols-4 gap-x-8">
+          <img class="w-4" src="./img/ig-logo.png">
+          <img class="w-4" src="./img/linkin-logo.png">
+          <img class="w-2" src="./img/facebook-logo.png">
+          <img class="w-4" src="./img/twitter-logo.png">
+        </div>
+      </div>
+      <div class="flex flex-col items-start justify-center space-y-2">
+          <h5 class="text-lg">
+            Services
+          </h5>
+          <ul class="flex flex-col space-y-4">
+            <li class="text-sm text-gray-500 text-start">
+              Incident Responder
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Secure Managed IT
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Check website Url
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Locker Security
+            </li>
+          </ul>
+      </div>
+      <div class="flex flex-col items-start justify-center space-y-2">
+          <h5 class="text-lg">
+            About Us
+          </h5>
+          <ul class="flex flex-col space-y-4">
+            <li class="text-sm text-gray-500 text-start">
+              Payment Plans
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Make saving More
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Tax Calculator
+            </li>
+            <li class="text-sm text-gray-500 text-start">
+              Talk To Us
+            </li>
+          </ul>
+      </div>
+      <div class="flex flex-col items-start justify-center space-y-6">
+        <h5 class="text-lg">
+          Contact Info
+        </h5>
+        <p class="text-sm text-gray-500 text-start">
+          455 West Orchard Street <br>
+          Kings Mountain, NC 280867
+        </p>
+        <ul class="flex flex-col space-y-4">
+          <li class=" flex flex-row space-x-4">
+            <img src="./img/phone-logo.png" alt="">
+            <p class="text-sm text-gray-500 text-start">
+              +088 (246) 642-27-10
+            </p>
+          </li>
+          <li class=" flex flex-row space-x-4">
+            <img src="./img/message-logo.png" alt="">
+            <p class="text-sm text-gray-500 text-start">
+              example@gmail.com
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <img class="w-3/4 my-12" src="./img/footer-line.png">
+    <p class="text-sm text-gray-500 text-center my-4">
+      © 2021 Appmax All Rights Reserved.
+    </p>
+  </div>
+</body>
+</html>
+
+
+
