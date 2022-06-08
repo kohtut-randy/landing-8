@@ -13,34 +13,32 @@
     }
   </style>
 </head>
-<body>
-  <div class="bg-blue-600 pt-4" style="height: 80px;">
-    <div class="container mx-auto flex flex-row justify-between  ">
-      <div>
-        <img src="./img/Logo.png" alt="">
+<body class="overflow-x-hidden">
+  <section class="relative bg-blue-600 lg:bg-cover lg:bg-bottom lg:px-28 px-6 overflow-hidden" id="hero">
+    <!--navation-start-->
+    <div class="relative container mx-auto flex justify-between pt-4 h-20 navation">
+      <img src="./img/Logo.png" alt="logo" class="w-auto h-8">
+      <ul class="lg:flex lg:space-x-10 lg:text-sm xl:text-base pt-1 lg:font-bold lg:opacity-70 hidden">
+          <li><a href="#">Demos</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="lg:space-x-6 mt-1 hidden lg:block">
+          <a href="#" class="font-medium text-sm opacity-70">Login</a>
+          <a href="#" class="py-3 px-6 bg-red-400 rounded text-white text-sm shadow">Sign Up</a>
       </div>
-      <div>
-        <ul class=" hidden lg:flex flex-row justify-between gap-x-4">
-          <li class="text-sm text-white">Demos</li>
-          <li class="text-sm text-white">Feature</li>
-          <li class="text-sm text-white">Pricing</li>
-          <li class="text-sm text-white">Contact</li>
-        </ul>
-      </div>
-      <div class="hidden lg:flex flex-row justify-between  gap-x-4 ">
-        <button class="text-white">Login</button>
-        <button class="text-white bg-red-400 rounded px-3 py-2">Sign Up</button>
-      </div>
+
       <!-- mobile start-->
       <input type="checkbox" name="check" id="check" class="hidden click">
       <label for="check" class="z-20 lg:hidden check-btn">
-          <div class=" mx-2 space-y-1">
+          <div class="space-y-1">
               <div class="w-6 h-0.5 bg-red-500 line"></div>
               <div class="w-6 h-0.5 bg-red-500 line"></div>
               <div class="w-6 h-0.5 bg-red-500 line"></div>
           </div>
       </label>
-      <div class="grid col-1  absolute w-3/4 h-auto text-center space-y-4 py-4 bg-neutral-100 transform: translate-x-6 -translate-y-4 -right-3/4 z-10 lg:hidden slider">
+      <div class="grid col-1  absolute w-3/4 h-screen text-center bg-neutral-100 transform: translate-x-6 -translate-y-4 -right-3/4 z-10 lg:hidden slider">
           <a href="#" class="text-stone-700 pt-16">Demos</a>
           <a href="#" class="text-stone-700">Features</a>
           <a href="#" class="text-stone-700">Pricing</a>
@@ -49,12 +47,10 @@
           <a href="#" class="py-3 px-6 bg-red-400 rounded text-white text-base shadow w-1/2 h-16 mx-auto flex items-center justify-center">Sign Up</a>
       </div>
       <!--mobile end-->
-    </div>
   </div>
-  <!--==============================================================
-  ===================================================================== -->
-  <div  class=" h-auto bg-blue-600 relative">
-    <div class="container mx-auto  flex flex-col items-center justify-center lg:flex flex-row lg:items-start">
+  <!--navation end-->
+  <div  class=" h-auto container bg-blue-600 relative">
+    <div class=" mx-auto  flex flex-col items-center justify-center lg:flex flex-row lg:items-start">
       <div class=" w-full lg:w-1/2 flex flex-col items-center lg:items-start  gap-y-4 lg:my-20 ">
         <h1 class="text-white text-center lg:text-left text-2xl lg:text-4xl font-extrabold font-mono ">The Smartest Way <br>
           to find a Doctor.
@@ -77,6 +73,8 @@
   </div>
   <!--==============================================================
   ===================================================================== -->
+  </section>
+ 
   <div class=" h-auto bg-white py-20 relative">
     <div class="container mx-auto grid grid-cols-1 lg:grid-cols-3 gap-y-6 " >
       <div class=" w-2/3   mx-auto space-y-6 px-0 py-8 lg:w-4/5 px-2 gap-y-4 flex flex-col items-center justify-center lg:space-y-4 bg-white rounded-xl shadow-2xl">
